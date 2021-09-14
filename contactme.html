@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/c605a744d3.js" crossorigin="anonymous"></script>
+  <title>Contact-me</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Josefin+Sans:ital,wght@1,200&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F0D9FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  border: 3px solid #45a049;
+  transition: ease-out 0.3s;
+  border-radius:10px ;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color:transparent;
+  padding: 10px;
+}
+.container h2{
+    font-size: 50px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*------------------- footer----------- */
+#foot{
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BFA2DB;
+}
+#foot a{
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:rgba(255,255,255,0.1);
+  color: black;
+  line-height: 1;
+  margin-right: 35px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#foot a:hover{
+  transition: ease-in 0.3s;
+  color:yellow;
+  
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+    
+    <div style="text-align:center">
+    <h2>---Contact Me---</h2>
+    <p>🙂🙂🙂🙂</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="cm.png" style="width:99%">
+    </div>
+    <div class="column">
+      <form action="mail.php" method="POST" enctype="text/plain">
+        <label for="fname"><strong> Name</strong></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname"><strong>Last Name</strong></label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject"><strong>Your Message</strong></label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" class="btn ">
+      </form>
+    </div>
+  </div>
+</div>
+<footer id="foot">
+      
+    <a href="https://twitter.com/Infinitymalone"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/infinitymalone/infinitymalone"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/infinitymalone/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/tushar-rawat-7b5181171/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:rawattushar29@gmail.com"><i class="fas fa-envelope"></i></a>
+    
+  </footer>
+
+</body>
+</html>
+
+
+
