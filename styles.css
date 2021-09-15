@@ -3,6 +3,7 @@ body{
   margin: 0;
   background-color: #F0D9FF;
   font-family: 'Josefin Sans', sans-serif;
+  overflow-x:hidden;
   
 }
 .navbar{
